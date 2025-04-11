@@ -24,7 +24,7 @@ class WS_Endpoint_CPT {
 
     public static function render_meta_box($post) {
         $endpoint_id = $post->ID;
-        $endpoint_url = rest_url("wp-webhook/receive/{$endpoint_id}");
+        $endpoint_url = rest_url("wp-webhook/v1/receive/{$endpoint_id}");
         echo "<p><strong>POST/GET to this URL:</strong><br><code>{$endpoint_url}</code></p>";
     }
 

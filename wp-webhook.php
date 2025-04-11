@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Webhook Sniffer
+Plugin Name: WP-Webhook
 Description: Create custom webhook endpoints and log incoming requests like webhook.site.
-Version: 1.0.0
-Author: Your Name
+Version: 1.0.0-alpha.1
+Author: Rob moore <io@rmoore.dev>
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit;

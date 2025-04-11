@@ -3,7 +3,7 @@
 class WS_API_Handler {
 
     public static function register_routes() {
-        register_rest_route('webhook-sniffer/v1', '/receive/(?P<id>\d+)', [
+        register_rest_route('wp-webhook/v1', '/receive/(?P<id>\d+)', [
             'methods'  => ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
             'callback' => [__CLASS__, 'handle_request'],
             'permission_callback' => '__return_true'
